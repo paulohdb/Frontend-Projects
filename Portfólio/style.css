@@ -1,0 +1,82 @@
+body {
+    background-color: #202020;
+    margin: 0;
+}
+
+p, h1 {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    background-color: rgba(94, 94, 94, 0.5);
+    margin: 50px 120px 10px 120px;
+    padding-top: 30px;
+    padding-left: 40px;
+    border-radius: 30px;
+}
+
+.containerNav {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    background-color: #5E5E5E;
+    padding: 10px;
+}
+
+.item {
+    color: #FF7A00;
+    font-family: Manrope;
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 150px;
+}
+
+.itemList {
+    display: inline-block;
+    color: #975C26;
+    font-size: 30px;
+    margin-right: 100px;
+    font-weight: bold;
+    font-family: Manrope;
+}
+
+.item-paulo {
+    justify-content: flex-start;
+}
+
+#menu {
+    text-align: right;
+    margin-top: 5px;
+    margin-right: 100px;
+}
+
+.header h1 {
+    font-family: Georama;
+    font-weight: bold;
+    color: #E5E5E5;
+    font-size: 80px;
+    padding-bottom: 10px;
+}
+
+.header p {
+    font-family: Asap;
+    font-weight: 400;
+    color: #E5E5E5;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+#buttonProj {
+    background-color:#FF7A00;
+    border-radius: 25px;
+    font-family: Manrope;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    color: #E5E5E5;
+    padding: 15px 100px 15px 100px;
+    text-decoration: none;
+}
