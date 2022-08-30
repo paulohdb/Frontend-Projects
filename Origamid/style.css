@@ -1,6 +1,7 @@
-body, ul {
+body, ul, p {
     margin: 0px;
     padding: 0px;
+    font-family: sans-serif;
 }
 
 a {
@@ -11,6 +12,36 @@ a {
 
 a:hover {
     background: rgba(0, 0, 0, .05)
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.shortText {
+    font-size: small;
+    color: #c7c7c7;
+    margin-top: 10px;
+}
+
+.boldText {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1420px;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 #logo {
@@ -26,6 +57,7 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     background: #e7e7e7;
+    
 }
 
 #menu {
@@ -42,6 +74,9 @@ a:hover {
 #btn-mobile {
     display: none;
 }
+
+
+
 
 @media (max-width: 600px) {
 
