@@ -1,16 +1,22 @@
 body {
     background-color: #202020;
     margin: 0;
+    padding: 0;
 }
 
-p, h1 {
+p, h1, ul {
     margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .container {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     background-color: rgba(94, 94, 94, 0.5);
     margin: 50px 120px 10px 120px;
     padding-top: 30px;
@@ -47,11 +53,6 @@ p, h1 {
     justify-content: flex-start;
 }
 
-#menu {
-    text-align: right;
-    margin-top: 5px;
-    margin-right: 100px;
-}
 
 .header h1 {
     font-family: Georama;
@@ -79,4 +80,30 @@ p, h1 {
     color: #E5E5E5;
     padding: 15px 100px 15px 100px;
     text-decoration: none;
+}
+
+#header {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 1rem;
+    justify-content: space-between;
+    background-color: #5E5E5E;
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#menu a {
+    display: block;
+    padding: .5rem;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
 }
