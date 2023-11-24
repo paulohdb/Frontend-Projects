@@ -1,0 +1,39 @@
+body {
+  font-family: Arial;
+  margin: 50px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  text-decoration: bold;
+}
+
+.block_class {
+  background: #111111;
+  color: #ffffff;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 4px;
+}
+
+.block_class span {
+  color: #febe01;
+}
+
+.block_class p {
+  color: #b2b2b2;
+}
+
+.block_class a {
+  display: inline-block;
+  background: #febe01;
+  text-decoration: none;
+  color: #332200;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.block_class h2 {
+  margin: 0px;
+}
