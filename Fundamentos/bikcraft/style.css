@@ -1,0 +1,45 @@
+body {
+  background: #f7f7f7;
+  font-family: Arial;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px;
+}
+
+.imagem {
+  max-width: 100%;
+}
+
+.links {
+  text-decoration: none;
+  color: black;
+  background: #FFFFFF;
+  padding: 15px 25px;
+  margin: 5px;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.links-class {
+  text-align: center;
+}
+
+.main-class {
+  background: #FFF;
+  text-align: end;
+  padding: 50px;
+}
+
+.details-class {
+  background: #FFF;
+  padding: 20px;
+}
+
+.about-class {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 100px;
+  place-items: center;
+}
