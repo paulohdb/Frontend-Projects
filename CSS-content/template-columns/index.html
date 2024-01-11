@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Template-Columns</title>
+  </head>
+  
+  <body>
+    <h1>Grid Template Columns</h1>
+    <div>
+      <h1>grid-template-columns: 100px 100px 100px 100px</h1>
+      <section class="grid gtc1">
+        <div class="item">A 1</div>
+        <div class="item">B 2</div>
+        <div class="item">C 3</div>
+        <div class="item">D 4</div>
+      </section>
+    </div>
+    <div>
+      <h1>grid-template-columns: 1fr 2fr 1fr</h1>
+      <section class="grid gtc2">
+        <div class="item">A 1</div>
+        <div class="item">B 2</div>
+        <div class="item">C 3</div>
+        <div class="item">D 4</div>
+      </section>
+    </div>  
+    <div>
+      <h1>grid-template-columns: minmax(50px, 1fr) 1fr 1fr 1fr</h1>
+      <section class="grid gtc3">
+        <div class="item">A 1</div>
+        <div class="item">B 2</div>
+        <div class="item">C 3</div>
+        <div class="item">D 4</div>
+      </section>
+    </div>
+    <div>
+      <h1>grid-template-columns: repeat(3, 1fr) 2fr</h1>
+      <section class="grid gtc4">
+        <div class="item">A 1</div>
+        <div class="item">B 2</div>
+        <div class="item">C 3</div>
+        <div class="item">D 4</div>
+      </section>
+    </div>
+    <div>
+      <h1>grid-template-columns: repeat(auto-fit, minmax(100px, auto))</h1>
+      <section class="grid2 gtc5">
+        <div class="item">Teste</div>
+        <div class="item">B 2</div>
+        <div class="item">Testeee</div>
+        <div class="item">D 4</div>
+        <div class="item">D 5</div>
+        <div class="item">Testeee</div>
+      </section>
+    </div>
+
+    <div>
+      <h1>grid-template-columns: repeat(auto-fill, minmax(80px, auto))</h1>
+      <section class="grid2 gtc6">
+        <div class="item">Teste</div>
+        <div class="item">B 2</div>
+        <div class="item">Testeee</div>
+        <div class="item">D 4</div>
+        <div class="item">D 5</div>
+        <div class="item">Testee</div>
+      </section>
+    </div>  
+  </body>
+</html>

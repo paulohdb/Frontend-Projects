@@ -1,0 +1,80 @@
+.grid {
+  display: grid
+}
+
+/* Example 1: using 100px for each column (total value), it ignores content, margin and etc.*/
+.gtc1 {
+  grid-template-columns: 100px 100px 100px 100px;
+} 
+
+/* Example 2: using fr as measures */
+.gtc2 {
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+}
+
+/* Example 3: using minmax */
+.gtc3 {
+  grid-template-columns: minmax(50px, 1fr) 1fr 1fr 1fr;
+}
+
+/* Example 4: using repeat */
+.gtc4 {
+  grid-template-columns: repeat(3, 1fr) 2fr;
+}
+
+/* Example 5: Repeating the auto-fit, with a minmax of 100px and auto. This container is bigger than the others. */
+.gtc5 {
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+}
+
+.gtc6 {
+  grid-template-columns: repeat(auto-fill, minmax(80px, auto));
+}
+
+/* ------------------------------------------------- */
+
+/* Styles that won't change during the tests */
+.grid {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #aaa
+}
+
+.grid2 {
+  display: grid;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #aaa
+}
+
+.item {
+  margin: 5px;
+  background: #c5f2ca;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h1 {
+  text-align: center;
+}
+
+div > h1 {
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: normal;
+}
+
+body {
+  font-family: monospace;
+  color: #333;
+  margin: 0px;
+  padding-bottom: 60px;
+}
+
+body > div {
+  padding: 50px 0;
+}
+
+body > div:nth-of-type(even) {
+  background: rgba(0,0,0,.05)
+}
