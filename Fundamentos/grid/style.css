@@ -1,0 +1,57 @@
+.grid-class {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.title-class {
+  grid-column: 1 / -1;
+}
+
+.info-class {
+  place-self: start;
+  display: grid;
+  place-items: start;
+  gap: 20px;
+}
+
+
+/* Estilos Gerais */
+
+body {
+  font-family: Arial;
+  margin: 40px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+h1, p {
+  margin: 0px;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1;
+}
+
+p, span {
+  font-size: 20px;
+}
+.link_buy {
+  background: #aa88ff;
+  color: #103;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.price-class {
+  background-color: #ddd;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
