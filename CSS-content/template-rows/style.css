@@ -1,0 +1,68 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.gtr1 {
+  grid-template-rows: 50px 100px 75px 125px;
+} 
+
+.gtr2 {
+  grid-template-rows: 100px 100px;
+}
+
+.gtr3 {
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+}
+
+.gtr4 {
+  grid-template-columns: 100px auto 80px;
+  grid-template-rows: repeat(3, 75px);
+}
+/* ------------------------------------------------- */
+
+/* Styles that won't change during the tests */
+.grid {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #aaa
+}
+
+.grid2 {
+  display: grid;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #aaa
+}
+
+.item {
+  margin: 5px;
+  background: #a13;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h1 {
+  text-align: center;
+}
+
+div > h1 {
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: normal;
+}
+
+body {
+  font-family: monospace;
+  color: #333;
+  margin: 0px;
+  padding-bottom: 60px;
+}
+
+body > div {
+  padding: 50px 0;
+}
+
+body > div:nth-of-type(even) {
+  background: rgba(0,0,0,.05)
+}
