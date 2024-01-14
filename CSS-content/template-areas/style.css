@@ -1,0 +1,101 @@
+.grid {
+  display: grid;
+}
+
+.logo {
+  grid-area: logo; 
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.sidenav {
+  grid-area: sidenav;
+}
+
+.content {
+  grid-area: content;
+}
+
+.advert {
+	grid-area: advert;
+}
+
+.footer {
+	grid-area: footer;
+}
+
+.gta1 {
+  grid-template-areas: 
+    "logo nav nav"
+    "sidenav content advert" 
+    "sidenav footer footer"
+  ;
+} 
+
+.gta2 {
+  grid-template-areas:
+		"sidenav logo nav"
+		"sidenav content advert"
+		"sidenav content footer"
+	;
+}
+
+.gta3 {
+  grid-template-columns: 30% 50% 20%;
+	grid-template-rows: 50px 150px 50px;
+	grid-template-areas:
+		"logo nav nav"
+		"sidenav content advert"
+		"sidenav footer footer"
+		;
+}
+
+/* ------------------------------------------------- */
+
+/* Styles that won't change during the tests */
+.grid {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #aaa
+}
+
+.grid2 {
+  display: grid;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #aaa
+}
+
+.item {
+  margin: 5px;
+  background: #a13;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h1 {
+  text-align: center;
+}
+
+div > h1 {
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: normal;
+}
+
+body {
+  font-family: monospace;
+  color: #333;
+  margin: 0px;
+  padding-bottom: 60px;
+}
+
+body > div {
+  padding: 50px 0;
+}
+
+body > div:nth-of-type(even) {
+  background: rgba(0,0,0,.05)
+}
