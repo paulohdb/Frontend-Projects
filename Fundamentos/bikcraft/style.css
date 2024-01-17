@@ -34,12 +34,27 @@ h1 {
 
 .details-class {
   background: #FFF;
-  padding: 20px;
+  display: grid;
+  place-content: center;
+  padding-top: 20px;
 }
 
 .about-class {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 100px;
-  place-items: center;
+}
+
+.pros-class {
+  display: grid;
+  place-content: end;
+  font-size: 64px;
+}
+
+
+.redB-class {
+  background: #ee2211;
+  text-decoration: none;
+  color: #c6c6c6;
+  padding: 10px;
 }
